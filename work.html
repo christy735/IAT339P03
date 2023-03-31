@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, minimum-scale=1" />
+  <title>Christy Lam's Portfolio</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+
+  <!-- Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <section class="navbar">
+    <h2><span class="heading-w">.</span></h2>
+    <nav>
+      <input type="checkbox" id="nav" class="hidden">
+      <label for="nav" class="nav-btn">
+        <i></i>
+        <i></i>
+        <i></i>
+      </label>
+      <div class="logo">
+        <!-- <a href="index.html">CL</a> -->
+        <a href="styleGuide.html" class="logo" ><img src="img/home.png" width="200px" alt="logo"></a>
+      </div>
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="bio.html" class="nav-link">About</a></li>
+          <li><a href="work.html" class="nav-link">Work</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section class="home-page">
+    <img src="img/back-to-top.png" alt="back-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
+  </section>
+  
+
+  <section id="work">
+    <h3>Work</h3>
+    <div class="home-flex">
+      <div class="home-project">
+        <img src="img/334-thumb.png" alt="334-thumb">
+        <a href="eclipse.html">
+          <div class="overlay">
+          </div>
+        </a>
+        <div class="text">
+          <h4>Pro-Fit</h4>
+          <h5>Application(UX/UI)</h5>
+        </div>
+      </div>
+      
+      <div class="home-project">
+        <img src="img/106-thumb.png" alt="106-thumb">
+        <a href="clown.html">
+          <div class="overlay">
+          </div>
+        </a>
+        <div class="text">
+          <h4>The Clown On A Unicycle</h4>
+          <h5>Product (UX/UI, 3D Modeling) </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!--footer-->
+  <footer class="footer-area">
+    <div class="main">
+      <div class="footer">
+        <h1><i>let's create together</i></h1>
+        <div class="single-footer">
+          <ul>
+            <li>
+              <p><i class="fa fa-envelope-o"></i><a href="mailto:chl52@sfu.ca">chl52@sfu.ca</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-footer">
+          <p>&copy; Designed & Coded by Christy Lam</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/style.js"></script>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+
+</html>
