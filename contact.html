@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="icon" type="image/x-icon" href="img/Logo2.png">
+    <title>Style Guide - Christy Lam</title>
+    
+</head>
+
+<body>
+   <!-- header -->
+   <section class="navbar">
+    <h2><span class="heading-w">.</span></h2>
+    <nav>
+      <input type="checkbox" id="nav" class="hidden">
+      <label for="nav" class="nav-btn">
+        <i></i>
+        <i></i>
+        <i></i>
+      </label>
+      <div class="logo">
+        <a href="styleGuide.html" class="logo" ><img src="img/home.png" width="200px" alt="logo"></a>
+      </div>
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="work.html" class="nav-link">Work</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section id="contact">
+    <h3 class="pageContent3">Contact Me</h3>
+    <div class="pageContent2">
+    <div class="contactForm">
+        <div class="contactInfo">
+            <h2>Questions for me?</h2>
+            <h3>Don't be a stranger!</h3>
+            <p>If you have any concerns or questions,
+                please feel free to drop your name, email, and message.
+                I would respond in a few days. Thank you!</p>
+        </div>
+        <div class="contactMessage">
+            <section class="form">
+                <form action="index.html">
+                    <div class="contactInput">    
+                        <label><b>First Name</b><br>
+                        <input type="contact-text" name="First Name" value="First Name" placeholder="First Name"></label>
+                        <label><b>Last Name</b><br>
+                        <input type="contact-text" name="lastname" value="Last Name" placeholder="Last Name"></label>
+                        <label><b>Email</b><br>
+                        
+                        <input type="contact-text" placeholder="Email"></label>
+                        <label><b>Subject</b><br>
+                        <input type="contact-text" placeholder="Subject"></label>
+                        <label><b>Message</b><br>
+                        <input type="contact-text" placeholder="Message"></label>
+                        <button class="button-nav" onclick="location.href='product.html';" value="back to product">Submit</button><br>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+
+    </div>
+</div>
+</section>   
+
+<!--footer-->
+<footer class="footer-area">
+    <div class="main">
+      <div class="footer">
+        <h1><i>let's create together</i></h1>
+        <div class="single-footer">
+          <ul>
+            <li>
+              <p><i class="fa fa-envelope-o"></i><a href="mailto:chl52@sfu.ca">chl52@sfu.ca</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-footer">
+          <p>&copy; Designed & Coded by Christy Lam</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/script.js"></script>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+
+</html>

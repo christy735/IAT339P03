@@ -1,0 +1,623 @@
+<!-- HAVE TO FIX THE SPACING ON THIS PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="icon" type="image/x-icon" href="img/Logo2.png">
+    <title>Style Guide - Christy Lam</title>
+</head>
+
+<body>
+    <script src="scripts/script.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <!-- nav bar of Portfolio -->
+    <!-- header -->
+    <section class="navbar">
+        <h2><span class="heading-w">.</span></h2>
+        <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+        <div class="logo">
+            <!-- <a href="index.html">CL</a> -->
+            <a href="styleGuide.html" class="logo" ><img src="img/home.png" width="200px" alt="logo"></a>
+        </div>
+        <div class="nav-wrapper">
+            <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="work.html" class="nav-link">Work</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+            </ul>
+        </div>
+        </nav>
+    </section>
+
+    <!-- content -->
+    <section class="pageContent2">
+        <header>
+        <h1>Christy Lam Style Guide</h1>
+        </header>
+    </section>
+
+    <!-- nav bar of style guide -->
+    <section class="pageContent2">
+    <section class="navbar2">
+        <form action="styleGuide.html#interactive_elements">
+        <ul><li><button href="#interactive_elements" >Interactive Elements</button></li> </ul>
+        </form>
+
+        <form action="styleGuide.html#colour_palette">
+        <ul><li><button href="#colour_palette">Colour Palette</button></li></ul>
+        </form>
+
+        <form action="styleGuide.html#text_elements">
+        <ul><li><button href="#text_elements">Text Element</button></li></ul>
+        </form>
+
+        <form action="styleGuide.html#combined_elements">
+        <ul><li><button href="#combined_elements">Combined Elements</button></li></ul>
+        </form>
+        
+        <form action="styleGuide.html#Artifact_one">
+        <ul><li><button href="#Artifact_one">Artifact1</button></li></ul>
+        </form>
+
+        <form action="styleGuide.html#Artifact_two">
+        <ul><li><button href="#Artifact_two">Artifact2</button></li></ul>
+        </form>
+
+        <form action="styleGuide.html#citations">
+        <ul><li><button href="#citations">Citations</button></li></ul>
+        </form>
+
+    </section>
+    </section>
+
+    <!-- HTML elements // -->
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements" >
+        <h2 class="pageContent3" >Interactive Elements</h2>
+        <div class="gridContainer" id="interactive_elements" >
+        <!-- In-Text Link -->
+        <section class="gridElement">
+            <h3>In-text link</h3>
+            <h4>CSS selector:</h4>
+            <p>.element1 a</p>
+            <h4>Sample code:</h4>
+            <code>&lt;a href="https://www.instagram.com/lamhoyan.co2/"&gt;@lamhoyan.co2&lt;/a&gt;</code>
+            <h4>Rendered element:</h4>
+            <a href="https://www.instagram.com/lamhoyan.co2/">@lamhoyan.co2</a>
+        </section>
+        
+        <!-- Default Button styling section -->
+        <section class="gridElement">
+            <h3>Navigation Link</h3>
+            <h4>CSS selector:</h4>
+            <p>.button-nav</p>
+            <h4>Sample code:</h4>
+            <code>&lt;a href="#" class="navLink"&gt;Default Button&lt;/a&gt;</code>
+            <h4>Rendered element:</h4>
+            <a href="index.html" class="navLink">Home</a>
+        </section>
+        
+        <!-- Submit/Reset Buttons -->
+        <section class="gridElement">
+            <section class="button">
+                <h3>Submit/Reset Buttons</h3>
+                <h4>CSS selector:</h4>
+                <p>.rs_button</p>
+                <h4>Sample code:</h4>
+                <code>&lt;from action="rs_button"&gt;<br>
+                        &lt;a class="button-nav" href="#"&gt;Reset!&lt;/a&gt;<br>
+                        &lt;br&gt;<br>
+                        &lt;a class="button-nav" href="#"&gt;Submit&lt;/a&gt;<br>
+                        &lt;/form&gt;</code>
+                <h4>Rendered element:</h4>
+                    
+                <form action="styleGuide.html">
+                    <button class="submitButton" >Submit</button>
+                    <button class="resetButton" >Reset</button>
+                </form>
+            </section>
+        </section>
+        
+        <!-- Text Input -->
+        <section class="gridElement">
+            <section class="element4">
+                <h3>Text Input Field with Label</h3>
+                <h4>CSS selector:</h4>
+                <p>input[type=search]</p>
+                <h4>Sample code:</h4>
+                <code>&lt;from&gt;<br>
+                        &lt;fieldset class="info"&gt;<br>
+                        &lt;input type="search" placeholder="Search..."&gt;<br>
+                        &lt;/fieldest&gt;<br>
+                        &lt;/form&gt;</code>
+                <h4>Rendered element:</h4>
+                <form>
+                    <fieldset class="info">
+                        <input type="search" placeholder="Search...">
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+        
+        <!-- Radio Button with Label -->
+        <section class="gridElement">
+            <section class="element4">
+                <h3>Radio Button with Label</h3>
+                <h4>CSS selector:</h4>
+                <p>.radio</p>
+                <h4>Sample code:</h4>
+                <code>&lt;label class="radio"&gt;This is button 1<br>
+                        &lt;input type="radio" checked="checked" name="radio"&gt;<br>
+                        &lt;span class="checkmark"&gt;&lt;/span&gt;<br>
+                        &lt;/label&gt;<br>
+                        &lt;label class="radio"&gt;This is button 2<br>
+                        &lt;input type="radio" name="radio"&gt;<br>
+                        &lt;span class="checkmark"&gt;&lt;/span&gt;<br>
+                        &lt;/label&gt;</code>
+                <h4>Rendered element:</h4>
+                <label class="radio">This is button 1
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                    <br>
+                </label>
+                <label class="radio">This is button 2
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+            </section>
+        </section>
+        
+        <!-- An Image as a Link -->
+        <section class="gridElement">
+            <section class="element4">
+                <h3>Image as a Link</h3>
+                <h4>CSS selector:</h4>
+                <p>.element3 a</p>
+                <h4>Sample code:</h4>
+                <code>&lt;a href="https://www.instagram.com/lamhoyan.co2/"&gt;&lt;img src="img/mw.png" alt="SocialMedia"&gt;&lt;/a&gt;</code>
+                <h4>Rendered element:</h4>
+                <a href="https://www.instagram.com/lamhoyan.co2/"><img src="img/me.png" width=200px alt="SocialMedia"></a>
+            </section>
+        </section>
+    </section>
+        
+
+
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+    <section id="colour_palette" >
+
+        <h2 class="pageContent3">Colour Palette</h2>
+        <div class="colours ">
+            <div>
+                <div class="color1"></div>
+                <p>#151b2b<br>Title</p>
+            </div>
+
+            <div>
+                <div class="color2"></div>
+                <p>#af9883<br>navigation text</p>
+            </div>
+                
+            <div>
+                <div class="color3"></div>
+                <p>#000000<br>major text</p>
+            </div>
+
+            <div>
+                <div class="color4"></div>
+                <p>#e7e7e7<br>text box</p>
+            </div>
+
+            <div>
+                <div class="color5"></div>
+                <p>#FFFFFF<br>background</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+        <h2 class="pageContent3">Text Styling</h2>
+        <section class="pageContent2">
+            <!-- Heading 1 -->
+            <div class="headings">
+                <div class="headingsID">
+                    <p>Heading 1</p>
+                </div>
+            
+                <h1 class="header">Welcome to my portfolio!</h1>
+                <div class="headingsDescr">
+                    <p>35px, 700</p>
+                </div>
+            </div>
+            <!-- Heading 2 -->
+            <div class="headings">
+                <div class="headingsID">
+                    <p>Heading 2</p>
+                </div>
+            
+                <h2 class="header">Welcome to my portfolio!</h2>
+                <div class="headingsDescr">
+                    <p>23px, 700, italic</p>
+                </div>
+            </div>
+            
+            <!-- Heading 3 -->
+            <div class="headings">
+                <div class="headingsID">
+                    <p>Heading 3</p>
+                </div>
+            
+                <h3 class="header">Welcome to my portfolio!</h3>
+                <div class="headingsDescr">
+                    <p>18px, 500</p>
+                </div>
+            </div>
+            
+            <!-- Heading 4 -->
+            <div class="headings">
+                <div class="headingsID">
+                    <p>Heading 4</p>
+                </div>
+            
+                <h4 class="header">Welcome to my portfolio!</h4>
+                <div class="headingsDescr">
+                    <p>16px, 500</p>
+                </div>
+            </div>
+            
+            <!-- Paragraph -->
+            <div class="headings">
+                <div class="headingsID">
+                    <p>Paragraph</p>
+                </div>
+                <p class="header">I'm Christy Lam</p>
+                <div class="headingsDescr">
+                    <p>16px, 300</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+        
+    <!-- // TEXT ELEMENTS SECTION -->
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+    <h2 class="pageContent3">Combined Elements</h2>
+
+        <!-- Main Navigation -->
+        <h3 class="pageContent3">Navigation Bar</h3>
+        <section class="navbar">
+            <h2><span class="heading-w">.</span></h2>
+            <nav>
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="logo">
+                    <!-- <a href="index.html">CL</a> -->
+                    <a href="styleGuide.html" class="logo" ><img src="img/home.png" width="200px" alt="logo"></a>
+                </div>
+                <div class="nav-wrapper">
+                    <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <!-- <li><a href="index.html#work" class="nav-link">Work</a></li> -->
+                    <li><a href="work.html" class="nav-link">Work</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Contact Me -->
+        <section id="contact">
+        <h3 class="pageContent3">Contact Me</h3>
+            <section class="pageContent2">
+            <div class="contactForm">
+                <div class="contactInfo">
+                    <h2>Questions for me?</h2>
+                    <h3>Don't be a stranger!</h3>
+                    <p>If you have any concerns or questions,please feel free to drop your name, email, and message.I would respond in a few days. Thank you!</p>
+                </div>
+                <div class="contactMessage">
+                    <section class="form">
+                        <form action="index.html">
+                        <div class="contactInput">    
+                            <label><b>First Name</b><br>
+                            <input type="contact-text" name="First Name" value="First Name" placeholder="First Name"></label>
+                            <label><b>Last Name</b><br>
+                            <input type="contact-text" name="lastname" value="Last Name" placeholder="Last Name"></label>
+                            <label><b>Email</b><br>
+                                        
+                            <input type="contact-text" placeholder="Email"></label>
+                            <label><b>Subject</b><br>
+                            <input type="contact-text" placeholder="Subject"></label>
+                            <label><b>Message</b><br>
+                            <input type="contact-text" placeholder="Message"></label>
+                            <button class="button-nav" onclick="location.href='index.html';" value="back to product">Submit</button>
+                        </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            </section>
+        </section>   
+
+
+        <!-- Biography -->
+        <section id="Biography">
+            <h3 class="pageContent3">Biography</h3>
+
+            <section class="bio-page">
+                <img src="img/back-to-top.png" alt="back-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
+                <div class="bio-flex">
+                <div class="bio-image" data-aos="fade-down">
+                    <img src="img/me.png" alt="bio_image">
+                </div>
+                <div class="bio-text" data-aos="fade-down">
+                    <h2><span class="title">Hello, I am Christy Lam. </span></h2>
+                    <p>I am a third-year student at SFU's School of Interactive Arts and Technology (SIAT) with a concentration in UX/UI design. As a designer, I am passionate about creating interfaces that are both aesthetically pleasing and intuitive to use. My creative process involves conducting user research and collaborating closely with cross-functional teams to ensure that the design aligns with business goals and technical requirements. 
+                    <br><br>
+                    With proficiency in design software such as Figma, and Adobe Creative Suite, as well as coding languages like HTML, CSS, and JavaScript, I am able to adapt quickly to changing project requirements and deliver exceptional user experiences.
+                    </p>
+                    <h3>Interest in employment</span></h3>
+                    <ul>
+                        <li><i class="fa fa-angle-right"></i>UX/UI designer</li>
+                        <li><i class="fa fa-angle-right"></i>graphic designer</li>
+                    </ul>
+                    </div>
+            
+                </div>
+            </section>
+        </section>
+
+        <!-- Artifact 1-->
+        <section id="Artifact_one">
+        <h3 class="pageContent3">Artifact 1</h3>
+        <section class="profit-info">
+            <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button> -->
+            <img src="img/back-to-top.png" alt="back-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
+            <div class="profit-flex1" data-aos="fade-up">
+            <div class="profit-text" >
+                <h3><span class="number"></span>Spring 2022</h3>
+                <h2>ProFit</h2>
+                <h4>Graphics, UX/UI</h3>
+                <h4>Team: Christy Lam, Vicky Lau, Vincent Zhang, Winkie Ng</h4>
+                <h4>Tools: Adobe Photoshop, Figma, Protopie</h4>
+                <br>
+                <h3>Project Description</h3>
+                <p>In the Interface Design course, our team, Unity, had to create an app that helps users in a professional context to adapt to the new balance between in-person and online activities under the COVID-19 pandemic. We decided to focus our app on the domain of fitness & health industry as our team understands that the pandemic has a significant impact on this industry. Thus, we created ProFit, an app that can help trainers to get through the tough times.</p>
+                <p>As the sole UX/UI designer with internship experience on the team, I played a key role in driving success. I facilitated numerous workshops and guided the team through the UX research process.Throughout the design process, I actively listened, participated in discussions, and evaluated diverse perspectives from the team. My goal was to go beyond relying solely on intuition, and make informed and feasible design decisions that aligned with the needs of personal trainers. By working collaboratively with my team, I helped to bring the project to fruition.</p>
+            </div>
+            <div class="profit-image1">
+                <iframe src="https://www.youtube.com/embed/WFTNNGqZrPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="profit-flex2" data-aos="fade-up">
+            <div class="profit-text" >
+                <h3>Design Process</h3>
+                <p>
+                We start by doing research on which domain we want to focus on. We chose fitness & health at last because all of us have friends working in this domain. We then researched how gyms had been running during the lockdown and after the restrictions have relaxed, as well as the challenges that personal trainers faced. After that, we created a fictional character based on our research in order to represent the target general user type, namely a persona, and created user flow, sketched wireframes, brand identity, and 4 sets of mock-ups using Protopie and UXPin.
+                </p>
+            </div>
+            <div class="profit-image2">
+                <img src="img/334-wireframe.png" alt="334-wireframe">
+                <p>Sketched wireframes and user flow. [jpg]</p>
+        
+            </div>
+            <div class="profit-image2">
+                <img src="img/334-brand.png" alt="334-brand-identity">
+                <p>Brand Identity. [jpg]</p>
+            </div>
+            <div class="profit-image2">
+                <img src="img/334-mockup.png" alt="334-mockup">
+                <p>4 sets of mockup. [jpg]</p>
+            </div>
+            <div class="profit-text" >
+                <p>
+                After getting more critiques from TA, we finalized our design and create an interactive prototype using Figma and protopie, and conducted a user study on 5 users to improve the functionality and user experience problem that we had.
+                </p>
+            </div>
+            <div class="profit-image3" >
+                <img src="img/334-figma.png" alt="334-figma">
+                <p>Design Process in Figma [screen shot]</p>
+            </div>
+            <div class="profit-text" >
+                <p>
+                Vincent and I are responsible for creating graphics in Figma and editing video in Final Cut Pro, while Vicky and Winkie's role are creating an interactive prototype using protopie. Other than interaction, I am the team leader and I will distribute tasks to my teammate. I also responsible for making sure the logic in prototypes by using coding and creating logos and graphics by using PhotoShop.
+                </p>
+            </div>
+            <div class="profit-image5" >
+                <img src="img/334-video.png" alt="334-video-editing">
+                <p>Design process of editing process video in Final Cut Pro. [screen shot]</p>
+            </div>
+            <div class="profit-image5" >
+                <img src="img/334-protopie.png" alt="334-protopie">
+                <p>Protopie process. [screen shot]</p>
+            </div>
+            </div>
+            <div class="profit-flex3"  data-aos="fade-up">
+            <div class="profit-text">
+                <h3>Challenges</h3>
+                <p>
+                The main challenge throughout this project is implementing logic in our prototypes and ensuring the coding is able to run in protopie. At first, we only added jump interaction in our prototype and we noticed that it is not enough for logical use. Thus, we used coding condition in protopie, such as “if user didn’t input numbers, show a warning sentences”. The coding in protopie is different from what I learn in other courses. Therefore, I watched some tutorials in YouTube and their official website but it doesn’t work in my prototype. It still allows user to go to next page even they didn’t type numbers. I feel frustrated and keep watching tutorials but I still could not solve the problems. I tried different method by myself, and I solved the problem at last.
+                </p>
+            </div>
+            <div class="profit-image4" >
+                <img src="img/334-logical.png" alt="334-logical">
+                <p>Example of logical use. If user did not input "@" in the email section, "invalid email" will be shown above. If user did not input the same password, "password does not match" will be shown above. [screen shot]</p>
+            </div>
+            <div class="profit-image5" >
+                <img src="img/334-coding.png" alt="334-coding">
+                <p>Coding in Protopie.[screen shot]</p>
+            </div>
+            </div>
+            <div class="profit-flex4" data-aos="fade-up">
+            <div class="profit-text" >
+                <h3>Reflection</h3>
+                <p>
+                    Previously, our design approach prioritized the end-users as the most crucial aspect, a principle we learned in previous design courses. However, I realized that we needed to consider the needs and objectives of various stakeholders, such as business owners, developers, and end-users. Balancing these competing priorities with good design practices is essential in creating the best solution for a given project with limited resources. The success of a project often depends not only on its aesthetic appeal and usability but also on meeting the objectives and requirements of all relevant parties. This experience has taught me to simplify the user experience while delivering essential features that are relevant to our target audience.
+                </p>
+            </div>
+            <div class="profit-image2" >
+                <img src="img/334-feature.png" alt="334-feature">
+                <p>ProFit's features.[screen shot]</p>
+            </div>
+            </div>
+            <div class="profit-flex9"  data-aos="fade-up">
+        </section>
+        
+        <!-- Artifact 2-->
+        <section id="Artifact_two">
+        <h3 class="pageContent3">Artifact 2</h3>
+    
+    <section class="clown-info">
+        <img src="img/back-to-top.png" alt="back-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
+        <div class="clown-flex1">
+        <div class="clown-text" data-aos="fade-up">
+            <h3><span class="number"></span>Spring 2020</h3>
+            <h2>The Clown On A Unicycle</h2>
+            <h4>Product (UX/UI, 3D Modeling)</h4>
+            <h4>Team: Christy Lam and Winkie Ng</h4>
+            <h4>Tools: Illustrator, SolidWorks, Maya</h4>
+            <br>
+            <h3>Project Description</h3>
+            <p>In the Spatial Thinking and Communicating course, my team was tasked with creating an Animated Beautiful Model (ABM) using SolidWorks. An ABM is a machine that combines mechanical components with aesthetics to produce a pleasant and surprising output when users interact with it. We chose to create a model called "Clown on a Unicycle" because we wanted to make something fun, lively, and joyful.
+            </p>
+        </div>
+        <div class="clown-image">
+            <img src="img/106-thumb.png" alt="106-cover" data-aos="fade-up">
+            <p>Final model of The Clown On A Unicycle.</p>
+        </div>
+        </div>
+        <div class="clown-flex1">
+        <div class="clown-text">
+            <h3>Design Process</h3>
+            <p>
+            To begin the project, our team brainstormed various ideas and discussed the possible movements that could be incorporated into our model. Our goal was to create a toy that would bring joy and cheer to those who interacted with it. We drew inspiration from Billy, a character from the horror movie Jigsaw, as well as Krusty the Clown from The Simpsons. We discussed and sketched rough designs for the model's housing and the mechanics of how it would operate.
+            </p>
+        </div>
+        <div class="clown-image3">
+            <img src="img/106-sketch.png" alt="106-sketch">
+            <img src="img/106-view.png" alt="106-view">
+            <p>The model performs three motions: right-hand up and down, leg curl, and wheel rotation (left).
+            <br>There are top, front, side, and inside views showing how the mechanics work, as well as an isometric view with the 3D parts' name labeled. (right)
+            </p>
+            
+        </div>
+        <div class="clown-text" >
+            <p>
+            Based on the sketches, we created a digital model in SolidWorks to demonstrate the mechanical motion. For the hand motion, I separated the forearm and arm and connected the parts to a four-bar linkage mechanism that is attached to one of the gears. For the leg curl and wheel rotation, I made two holes in the gear and used a bar to connect one hole to each wheel and lower leg. To ensure that the leg curls to the front, I created a small circular rail and used a leg pin to connect the upper and lower leg.
+            </p>
+        </div>
+        <div class="clown-image">
+            <img src="img/106-digital-parts.png" alt="106-digital-parts">
+            <p>Here are some pictures of the Solidworks model.
+            </p>
+        </div>
+        
+        </div>
+        <div class="clown-flex1">
+        <div class="clown-text" data-aos="fade-up">
+            <h3>Challenges</h3>
+            <p>
+            The main challenge throughout this project is transforming sketches into a 3D model since measuring the size of each part had to be precise. It was also a time-consuming task since I had to test the most suitable length of each motion mechanism to make sure they will not collide with other parts. In order to solve this challenge, I linked the mechanism part first and then adding the parts one at a time. This solution could help me make sure the mechanism motion is working and I do not have to keep changing the parts when I am testing the motion mechanism.
+            </p>
+        </div>
+        <div class="clown-image2">
+            <img src="img/ABM-video.gif" alt="106-video">
+            <p>Animation preview of the model in SolidWorks.</p>
+        </div>
+        </div>
+        <div class="clown-flex1">
+        <div class="clown-text">
+            <h3>Reflection</h3>
+            <p>
+            Throughout this project, I learned how to use sketches to communicate. During the design process, my team came up with different ideas, so we put them on paper and discussed which one to choose based on the mechanism, material for the model, and our personal preferences. I believe it's important to choose a design that we both like, otherwise, we may lose our passion for creating the model. I think we did a great job on this project because the model met our expectations.
+            </p>
+        </div>
+        </div>
+    </section>
+    </section>
+        
+    <!-- Citations -->
+        <section id="citations">
+            <h3 class="pageContent3">Citations</h3>   
+            <div class="paragraph">
+            <P>Artifact 1-ProFit Project Final Video. Retrieved from <a href="https://www.youtube.com/watch?v=WFTNNGqZrPU">https://www.youtube.com/watch?v=WFTNNGqZrPU</a></p>
+            <P>Back To Top Button.Youtube Video. Retrieved from <a href="https://www.youtube.com/watch?v=SJVCvnKM_lI">https://www.youtube.com/watch?v=SJVCvnKM_lI</a></p>
+            </div>
+            </section>
+        </section>  
+        <br><br><hr>
+
+        
+    <!--footer-->
+        <footer class="footer-area">
+        <div class="main">
+        <div class="footer">
+            <h1><i>let's create together</i></h1>
+            <div class="single-footer">
+            <ul>
+                <li>
+                <p><i class="fa fa-envelope-o"></i><a href="mailto:chl52@sfu.ca">chl52@sfu.ca</a></p>
+                </li>
+            </ul>
+            </div>
+            <div class="bottom-footer">
+            <p>&copy; Designed & Coded by Christy Lam</p>
+            </div>
+        </div>
+        </div>
+        </footer>
+
+    <!-- Back To Top Button Script -->
+    <script src="script/script.js"></script>
+
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</body>
+
+
+</html>
